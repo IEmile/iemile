@@ -1,16 +1,17 @@
 ### Hi there 👋
-
+This repo is my portiforial page i am happy to share that you can use any feature you find important
 <!--
-**IEmile/iemile** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+- 🔭 I’m currently working on a full stake website with
+- 🔭 Fire base or mongo db
+- 🔭 Node js
+- 🔭 React
+- 🔭 Html and Css
+
+- 🌱 I’m currently learning python and nextjs
+- 💬 Ask me about any thing you find complicated
+- 📫 How to reach me: my phone and watsap is (+250780375551) and email (ishimweemile51@gmail.com)
+- 😄 Pronouns: Mister
 -->
