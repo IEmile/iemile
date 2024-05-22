@@ -1,0 +1,564 @@
+/* ....................................................body styling  */
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: "Open Sans", sans-serif;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    /* background: transparent; */
+}
+body::before {
+    content: "";
+    position: fixed;
+    background: #040404 url("img/bg.jpg") top right no-repeat;
+    background-size: cover;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    z-index: -1;
+}
+a{
+    color: #fff;
+}
+/* ....................................................header styling  */
+header{
+    overflow-y: auto;
+    background: rgba(0, 0, 0, 0.479);
+    position: relative;
+    z-index: 997;
+}
+header nav{
+    left: 0;
+    top: 0;
+    display: flex;
+    margin: auto;
+    max-width: 1140px;
+    /* margin: 0px 105px 0px 105px; */
+    padding: 3px 12px 20px 12px;
+}
+header nav .e-htxt{
+    padding: 4px;
+}
+header nav .e-htxt a{
+    line-height: .3;
+    font-family: "Poppins", sans-serif;
+    font-size: 26px;
+    text-decoration: none;
+}
+header nav .e-htxt a:nth-child(2){
+    display: none;
+    font-size: 20px;
+    line-height: .1;
+    font-weight: bolder;
+    font-weight: normal;
+}
+header nav .e-hlnk{
+    flex: 1;
+    display: flex;
+    justify-content: end;
+}
+header nav .e-hlnk ul{
+    display: flex;
+    margin-right: 20px;
+    list-style: none;
+}
+header nav .e-hlnk ul li{
+    margin: 5px;
+    padding: 2px;
+}
+header nav .e-hlnk ul li button{
+    border: none;
+    background-color: transparent   ;
+}
+header nav .e-hlnk ul li button.active{
+    border-bottom: 2px solid rgba(0, 128, 0, 0.555);
+}
+header nav .e-hlnk ul li button.active a:hover{
+    color: white;
+    font-size:16px;
+}
+header nav .e-hlnk ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: .5s;
+}
+header nav .e-hlnk ul li a:hover{
+    color: green;
+    font-size: 15px;
+}
+.e-hlnk-icn{
+    display: none;
+}
+header.show{
+    display: flex;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.452);
+    flex-direction: column;
+    justify-content: center;
+}
+header.show nav{
+    display: flex;
+    margin: auto ;
+    margin-left: 10%;
+    flex-direction: column;
+}
+header.show nav .e-htxt{
+    padding: 15px 15px 20px 15px;
+}
+header.show nav .e-htxt a:nth-child(2){
+    display: block;
+}
+header.show nav .e-hlnk ul{
+    padding: 0px;
+    margin: 0px;
+}
+header.show nav .e-hlnk-icn{
+    display: block;
+}
+.e-hlnk-icn ul{
+    display: flex;
+    padding-left: 4px;
+    list-style: none;
+    gap: 24px;
+}
+.e-hlnk-icn ul li button{
+    background-color: rgba(255, 255, 255, 0.164);
+    border: none;
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+}
+.e-hlnk-icn ul li button:hover{
+    background-color: rgba(75, 240, 75, 0.63);
+}
+/* ....................................................main styling  */
+main{
+    overflow-y: auto;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.877);
+    position: relative;
+    z-index: 997;
+}
+/* ....................................................section styling  */
+section{
+    margin: auto;
+    max-width: 1140px;
+}
+/* ....................................................about styling  */
+#about{
+    display: none;
+}
+#about.show{
+    display: block;
+}
+#about div>h3,#resume div>h3,
+#services div>h3,#portforial div>h3,
+#contacts div>h3{
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #aaaaaa;
+    text-transform: uppercase;
+    line-height: .5;
+    font-family: poppins, sans-serif;
+}
+#about div>h3::after,#resume div>h3::after,
+#services div>h3::after,#portforial div>h3::after,
+#contacts div>h3::after{
+    content: "";
+    width: 120px;
+    height: 1px;
+    display: inline-block;
+    background: #4ceb95;
+    margin: 4px 10px;
+}
+#about div.e-abt>p,#resume div.e-rsm>p,
+#services div.e-svc>p,#portforial div.e-ptf>p,
+#contacts div.e-pn>p{
+    text-transform: uppercase;
+    line-height: .5;
+    font-size: 30px;
+    font-weight: bold;
+}
+.e-mn-cm-cd{
+    display: flex;
+}
+#about .e-img-sd {
+    width: 40%;
+}
+#about .e-img-sd img{
+    width: 100%;
+    height: 100%;
+}
+#about .e-txt-sd-cd{
+    flex: 1;
+}
+#about .e-txt-sd-cd>h4{
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    margin: 0;
+    color: #18d26e;
+}
+.e-txt-sd-cd p{
+    margin: 0;
+    line-height: 1.5;
+}
+#about .e-txt-sd-cd .e-mn-cm-cd{
+    display: flex;
+    margin: 12px 0px 12px 0px;
+    justify-content: space-between;
+}
+#about .e-clm-cd ul{
+    list-style: none;
+    margin: 16px 0px 16px 0px;
+    padding: 2px;
+}
+#about .e-clm-cd ul li{
+    margin: 6px;
+    padding: 11px;
+}
+#about .e-clm-cd ul li i{
+    color: rgb(5, 206, 5);
+    font-size: large;
+    font-weight: bold;
+    margin-right: 5px;
+}
+#about .e-clm-cd ul li strong{
+    padding: 2px;
+    margin-right: 10px;
+}
+#about .e-clm-cd ul li span{
+    padding: 2px;
+}
+#about .e-mn-cd{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 30px;
+}
+#about .e-mn-cd .e-cd-sml{
+    background-color: rgba(255, 255, 255, 0.115);
+    border-radius: 1px;
+    flex: .24;
+}
+#about .e-mn-cd .e-cd-sml>div{
+    text-align: center;
+    position: relative;
+}
+#about .e-mn-cd .e-cd-sml>div h1{
+    font-size: 36px;
+    margin-bottom: 2px;
+}
+#about .e-mn-cd .e-cd-sml>div i{
+    font-size: 24px;
+    position: absolute;
+    padding: 12px;
+    border-radius: 100%;
+    top: -55px;
+  transform: translateX(-50%);
+    line-height: 0;
+    background-color: rgba(255, 255, 255, 0.116);
+    color: #18d26e;
+}
+#about .e-mn-cd .e-cd-sml>div p{
+    line-height: 0px;
+    font-family: "Raleway", sans-serif;
+    font-size: 14px;
+    padding: 0px 0px 15px 0px;
+}
+.e-mn-clm-cd{
+    padding-top: 12px;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.e-mn-clm-cd .e-clm-cd{
+    flex: .495;
+}
+.e-mn-clm-cd .e-clm-cd .e-prg-cd>span{
+    padding: 10px 0;
+    margin: 0;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-between;
+    font-weight: 100;
+    font-size: 12px;
+    width: 100%;
+    font-family: "Poppins", sans-serif;
+}
+.e-mn-clm-cd .e-clm-cd .e-prg-br{
+    width: 100%;
+    background-color: #142b1f;
+    height: 9px;
+}
+.e-prg-fd{
+    height: 9px;
+    background-color: #18d26e;
+    width: 50%;
+}
+.e-int .e-mn-flx-cd{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px;
+    padding-bottom: 15px;
+    justify-content: space-around;
+}
+.e-int .e-mn-flx-cd .e-flx-cd{
+    background-color: rgba(255, 255, 255, 0.089);
+    flex: 0 0 auto;
+    margin: 3px;
+    margin-bottom: 6px;
+    width: 24%;
+    padding: 20px;
+    border-radius: 2px;
+}
+.e-int .e-mn-flx-cd .e-cd{
+    display: flex;
+    gap: 12px;
+}
+.e-int .e-mn-flx-cd .e-cd>i{
+    font-size: 30px;
+    text-align: center;
+}
+.e-int .e-mn-flx-cd .e-cd>span{
+    padding-top: 7px;
+    font-weight: 700;
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+}
+#about .prf .e-mn-cd{
+    display: flex;
+}
+/* ....................................................resume styling  */
+#resume{
+    display: none;
+}
+#resume.show{
+    display: block;
+}
+#resume .e-lg-clm{
+    display: flex;
+    justify-content: space-around;
+}
+#resume .e-lg-clm :is(h3)::after{
+    display: none;
+}
+#resume .e-lg-clm :is(h3){
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-family: "Raleway", sans-serif;
+}
+#resume .e-lg-clm h4{
+    line-height: 18px;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-family: "Poppins", sans-serif;
+    color: #18d26e;
+    margin-bottom: 10px;
+}
+#resume .e-lg-clm .e-cd-cnt p{
+    overflow: auto;
+}
+#resume .e-lg-clm .e-clm1{
+    padding: 0px 12px;
+    /* background-color: blue; */
+}
+#resume .e-lg-clm .e-clm1 .e-cd{
+    padding: 0px 0px 20px 20px;
+}
+/* .e-clm2{
+    background-color: orange;
+} */
+/* ....................................................services styling  */
+#services{
+    display: none;
+}
+#services.show{
+    display: block;
+}
+#services .e-svc-cd{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.e-mn-svc-cd{
+    background-color: rgba(255, 255, 255, 0.103);
+    padding: 45px 20px;
+    margin: 4px 0px 4px 0px;
+    width: 33%;
+}
+.e-mn-svc-cd div{
+    text-align: center;
+}
+.e-mn-svc-cd  .e-icon{
+    font-size: 25px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 64px;
+    width: 64px;
+    background-color: #18d26e;
+    border-radius: 5px;
+}
+.e-mn-svc-cd .e-icon::before{
+    content: "";
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.13);
+    transition: all 0.3s ease-out 0s;
+    transform: translateZ(-1px);
+    height: 100%;
+    width: 100%;
+    left: -8px;
+    top: -8px;
+    position: absolute;
+}
+#services .e-svc-cd .cd-cnt{
+    text-align: center;
+    padding: 20px 2px;
+}
+#services .e-svc-cd .cd-cnt a{
+    font-family: "Raleway", sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+}
+#services .e-svc-cd .cd-cnt p{
+    font-size: 14px;
+    line-height: 1.5;
+}
+/* ....................................................portiforial styling  */
+#portforial{
+    display: none;
+}
+#portforial.show{
+    display: block;
+}
+/* ....................................................contacts styling  */
+#contacts{
+    display: none;
+}
+#contacts.show{
+    display: block;
+}
+#contacts .e-pn-clm{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+#contacts .e-pn-clm .e-ph-cd-dtl{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.082);
+    padding: 20px;
+    margin: 9px;
+    width: 48%;
+}
+#contacts .e-pn-clm .e-ph-cd-dtl i{
+    padding: 16px;
+    font-size: 20px;
+    background-color: #ffffff09;
+    color: #18d26e;
+    border-radius: 100px;
+}
+#contacts .e-pn-clm .e-ph-cd-dtl p{
+    position: absolute;
+    font-weight: lighter;
+    font-size: 14px;
+    margin: 45px;
+    margin-left: 65px;
+}
+.e-phlnk-icn{
+    position: absolute;
+    margin: 25px;
+}
+.e-phlnk-icn ul{
+    display: flex;
+    gap: 15px;
+    list-style: none;
+}
+#contacts .e-pn-clm .e-ph-cd-dtl .e-phlnk-icn ul i{
+    color: #fff;
+    padding: 0px;
+    margin: 0;
+    font-size: large;
+}
+.e-ph-cd-dtl>h2{
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 700;
+    margin: 10px 2px 0 10px;
+    font-family: "Raleway", sans-serif;
+}
+.e-ph-cd2{
+    background-color: rgba(255, 255, 255, 0.068);
+    padding: 20px;
+    margin: 11px 0px 11px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.e-mn-ph-cd{
+    width: 49%;
+    margin: 6px 0px 6px 0px;
+    padding: 12px;
+}
+.e-lg-pn-cd,.e-msg-cd,.e-lg-pn-cd{
+    padding: 12px;
+    border-radius: 1px;
+    width: 100%;
+    margin: 6px 0px 6px 0px;
+}
+.e-lg-pn-cd{
+    text-align: center;
+}
+.e-lg-pn-cd input[type=text],.e-mn-ph-cd input[type=text]{
+    background: rgba(255, 255, 255, 0.08);
+    width: 100%;   
+    border-radius: 0px;
+    padding: 12px 15px  ;
+    height: 40px;
+    border: none;
+    color: white;
+    font-size: 14px;
+}
+.e-lg-pn-cd input[type=text]:focus,.e-mn-ph-cd input[type=text]:focus{
+    outline: none;
+}
+.e-msg-cd textarea{
+    border-radius: 0;
+    box-shadow: none;
+    font-size: 14px;
+    padding: 12px 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 0;
+    transition: 0.3s;
+    color: #fff;
+    width: 100%;
+}
+.e-msg-cd textarea:focus{
+    outline: none;
+}
+.e-lg-pn-cd input[type=submit]{
+    width: 150px;
+    color: #fff;
+    background-color: #089148;
+    font-size: large;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+    height: 36px;
+}
+
+
+/* ....................................................Auth styling  */
