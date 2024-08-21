@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+img,svg{
+    height: 100%;
+    width: 100%; 
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: white;
+}
+
+header nav#hnav{
+    display: flex;
+    font-family: Pridi;
+    padding: 15px 10%;
+}
+#hnav .logo{
+    flex: 1;
+    display: flex;
+    color: rgb(23, 23, 56);
+}
+/* #hnav #logo{
+    height: 20px;
+    align-self: center;
+} */
+#hnav .navigation ul{
+    display: flex;
+    color: rgb(153, 150, 150);
+}
+.navigation ul li{
+    padding: 5px;
+    font-weight: bold;
+}
+.navigation ul li:hover{
+    font-size: 15px;
+    padding: 7px;
+}
+.body .description{
+    position: relative;
+}
+.body{
+    display: flex;
+    padding-left: 10%;
+}
+.body .description{
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+.body .description h1{
+    font-family: Raleway;
+    font-weight: 900;
+    font-size: 3.2rem;
+    padding-top: 70px;
+    padding-bottom: 20px;
+    /* color: background: linear-gradient(220.55deg, #A531DC 0%, #4300B1 100%);;  background: linear-gradient(220.55deg, #FFED46 0%, #FF7EC7 100%);  */
+    color: #8c44ad;
+}
+.body .description p{
+    font-size: 18px;
+    font-family: Raleway;
+    font-weight: 200;
+    max-width: 400px;
+}
+.body .medialink {
+    margin-top: auto;
+}
+.body .medialink ul{
+    display: flex;
+    font-size: 12px;
+}
+.body .medialink ul li a{
+    color: white;
+}
+.body .medialink ul li{
+    padding: 10px;
+    border-radius: 6px;
+    margin: 3px;
+    background: linear-gradient(220.55deg, #FFED46 0%, #FF7EC7 100%);;
+}
+.body .medialink ul li:hover{
+    background: rgb(3, 77, 3);
+}
+.body .illistraction{
+    position: relative;
+}
+
+.body .img1{
+    width: 400px;
+    position: absolute;
+    left: 300px;
+    z-index: 100;
+}
+.body .img2{
+    width: 400px;
+    z-index: 999;
+}
+.body .img3{
+    width: 400px;
+    position: absolute;
+    left: 40%;
+    top: 250px;
+    z-index: -444;
+}
+
+main{
+    padding-left: 10%;
+}
+
+main .techpage{
+    margin-top: 30px;
+}
+main .techpage h3{
+    padding: 5px;
+    font-family: Nothing You Could Do;
+    font-size: 20px;
+    font-weight: 600;
+    color: #303dee;
+}
+main .animation{
+    width: 400px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.893);
+    border: 3px solid black;
+    box-shadow: black 4px 0px 6px 2px;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px;
+}
+
+
+
+footer{
+    height: 50px;
+    background-color: black;
+    margin-top: auto;
+    width: 100%;
+}
