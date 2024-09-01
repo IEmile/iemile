@@ -1,0 +1,37 @@
+
+
+                                             /* hnav styles  */
+
+
+header nav#hnav{
+    display: flex;
+    font-family: Pridi;
+    padding: 15px 10%;
+}
+#hnav .logo{
+    flex: 1;
+    display: flex;
+    color: rgb(23, 23, 56);
+}
+#hnav .navigation ul{
+    display: flex;
+    color: rgb(153, 150, 150);
+}
+.navigation ul li{
+    padding: 5px;
+    font-weight: bold;
+}
+.navigation ul li:hover{
+    font-size: 15px;
+    padding: 7px;
+}
+
+                                                 /* footer styles  */
+
+
+footer{
+    height: 50px;
+    background-color: black;
+    margin-top: auto;
+    width: 100%;
+}

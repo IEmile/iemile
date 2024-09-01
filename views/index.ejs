@@ -11,10 +11,13 @@
 
 
 
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
 
@@ -22,25 +25,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Freckle+Face&family=Pridi:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/partials.css">
     <link rel="stylesheet" href="css/index.css">
     <title>IEmileDev</title>
 </head>
 <body>
-    <header>
-        <nav id="hnav">
-             <div class="logo">
-                <label for="logo-text"><h1 id="logo-text">IEmileDev</h1></label>
-             </div>
-             <div class="navigation">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="services">Services</a></li>
-                    <li><a href="about">About</a></li>
-                    <li><a href="projects">Projects</a></li>
-                    <li><a href="contact">Contact</a></li>
-                </ul>
-             </div>   
-        </nav>
+    <header id="home">
+        <%- include ('partials/hnav') %>
         <section class="body">
             <div class="description">
                 <h1>IEmile Code Factory</h1>
@@ -66,7 +58,7 @@
 
     <main>
         <div class="techpage">
-            <h3>New and improved tech</h3>
+            <h3>&#126; New and improved tech.</h3>
             <div class="animation">
             ddd
             </div>  
@@ -75,8 +67,6 @@
         
 
     </main>
-    <footer>
-        d
-    </footer>
+    <%- include ('partials/footer') %>
 </body>
 </html>
