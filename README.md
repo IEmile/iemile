@@ -3,7 +3,7 @@
 
 <!-- ![Header Image](https://link-to-your-image.com/banner.png) -->
 
-## I’m a passionate developer exploring the endless possibilities at the intersection of code and electronics. With a growing focus on AI and robotics, I'm diving deep into innovation and automation.
+ I’m a passionate developer exploring the endless possibilities at the intersection of code and electronics. With a growing focus on AI and robotics, I'm diving deep into innovation and automation.
 
 ### 🚀 Languages and Tools:
 <p>
